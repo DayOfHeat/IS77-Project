@@ -1,4 +1,4 @@
-﻿# Project Plan
+# Project Plan
 
 ## Overview
 
@@ -17,8 +17,6 @@
 ## Datasets
 
 - Describe data sets
-
-- Explain how they compliment
 
 ## Timeline
 
