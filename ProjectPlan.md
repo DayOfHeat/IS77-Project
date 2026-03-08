@@ -1,6 +1,6 @@
 # Overview
 
-The goal of this project is to analyze UK benefits fraud data along side UK labor data to observe any trends between the labor market and benefits fraud. We plan to compare labor statistics such as unemployment and pay levels over time with benefits fraud levels. [Expand]
+The goal of this project is to analyze UK benefits fraud data along side UK labor data to observe any trends between the labor market and benefits fraud. We plan to compare labor statistics such as unemployment and pay levels over time with benefits fraud levels to in order to find out what economic conditions drive more fraud so we can propose potential solutions to reduce the fraud. We will be using official UK data from the DWP and ONS and analyze it with Python.
 
 # Team
 
@@ -58,3 +58,5 @@ One constraint in terms of our data for the project is the lack of non-employmen
 One knowledge gap we have right now is the best way to make the data usable. Both data sets came in the form of excel spreadsheets, which, while perfectly easy to import into Python, will require a lot of manual work to get the data from, at least based on our current understanding. If there is an easier tool to use to get the data properly extracted and made usable by Python, it would be a massive time-saver for the project. 
 
 Another gap is how to handle the changing in data collection methodologies throughout the data. Due to the nature of the analysis, we want to look at a long range of years, but the methodology changes will make that difficult. Worse, the changes are mostly in more recent years, which are naturally the most informative years to look if we want the data to be useful today. Any help in terms of how to handle these changes would be appreciated. Would it be better to only use years that have the same method, to use all years but qualify our conclusions, or to do separate analyses for each chunk of years that used a given method.
+
+A final gap is that we couldn't find any information on when the interim status report and final project would be due, so we weren't able to assign specific dates to our timeline. 
