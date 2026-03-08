@@ -1,4 +1,4 @@
-﻿# Overview
+# Overview
 
 The goal of this project is to analyze UK benefits fraud data along side UK labor data to observe any trends between the labor market and benefits fraud. We plan to compare labor statistics such as unemployment and pay levels over time with benefits fraud levels. [Expand]
 
@@ -10,11 +10,7 @@ Michael will be in charge of [A,B,C]
 
 ## Research Questions
 
-
-
-
-
-
+The question we want to answer using our data is if levels of benefits fraud (in both absolute terms and as a percentage of benefits paid) correlates with poor economic conditions (high unemployment, low average wages, et cetera). Our theory is that a worse economy will drive more people into desperate conditions where they may engage in fraud. If it does, this could show the UK government that they need to either invest more in the DWP during times of economic hardship to stop the fraud or consider increasing benefits to reduce the pressure to commit fraud to survive. If we find no change or that there is more fraud during good economic times, this could be a sign that the fraud is more systemic and driven by personal gain rather than desperation.
 
 # Datasets
 
@@ -39,3 +35,6 @@ There are also some changes to how the data was collected throughout the time sp
 Another limitation of the data is that the benefits data only provides demographic data for 2024 and 2025. If we had access to the demographic data for all years, we could combine that with the economic demographic data to draw further analysis about economic trends and benefits fraud.
 
 # Gaps
+
+One knowledge gap we have right now is the best way to make the data usable. Both data sets came in the form of excel spreadsheets, which, while perfectly easy to import into Python, will require a lot of manual work to get the data from, at least based on our current understanding. If there is an easier tool to use to get the data properly extracted and made usable by Python, it would be a massive time-saver for the project.
+
