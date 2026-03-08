@@ -12,7 +12,6 @@
 
 ## Research Questions
 
-- Describe them
 
 ## Datasets
 
@@ -30,7 +29,6 @@
 
 ## Gaps
 
-- Identify and explain
 
 # Release
 
