@@ -8,6 +8,7 @@ Josh - Fraud Detection Specialist
 
 As a fraud detection specialist, Josh will be taking the lead on all work that is related to the UK benefits fraud dataset. Josh will be responsible for ensuring that the fraud data is correctly structured and ready to be analyzed as well as making sure to help integrate it with Michael’s economic data so that the two sources can be looked at side by side. Josh will also take charge of the exploratory analysis and work to identify patterns and correlations between fraud levels and economic conditions. Josh will also play a key role in wrapping up the project and combining the team’s collective work into one cohesive final report which will summarize the findings and provide potential avenues for future research.
 
+
 Michael - Economic Specialist
 
 As an economic specialist, Michael will be responsible for overseeing all aspects of the project when it comes to the UK labor market data. By taking this role, Michael will ensure that economic indicators such as unemployment rates and wage levels are accurately represented and are able to be clearly communicated during the analysis. Outside of the data itself, Michael will also be responsible for translating the team’s findings into meaningful and digestible visual/written outputs, creating the various charts and graphs which will help bring the data together, as well as presenting our team’s conclusions and the real world implications of the research. Michael’s work will serve to bridge the gap between the raw economic data and the findings/story of the team.
