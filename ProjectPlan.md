@@ -27,7 +27,7 @@ The way these two data sets work together is through time. The benefits data tim
 
 # Timeline
 
-- **Data formatting & cleaning**: Loading the data from each spreadsheet into Python and turning it into a well formatted, usable form like DataFrames. Responsibilities: Fraud Data: Josh, Labor Data: Michael
+- **Data formatting & cleaning:**: Loading the data from each spreadsheet into Python and turning it into a well formatted, usable form like DataFrames. Responsibilities: Fraud Data: Josh, Labor Data: Michael
 
 - **Data integration:** Combine data frames from each data set to each other by joining them over the time data column. May also require reformatting the time columns of each data set to be of the same granularity. Responsibility: Josh
 
@@ -35,13 +35,9 @@ The way these two data sets work together is through time. The benefits data tim
 
 - **Data visualization:** Create graphs and other visual to present the data nicely. Responsibility: Michael
 
-- **Report findings:** Explain conclusions drawn from the data and the potential implications of them.  Responsibility: Michael
+- **Report findings:** Explain conclusions drawn from the data and the potential implications of them. Responsibility: Michael
 
 - **Finish report:** Produce the summary of our findings, describe future research, and other miscellaneous remaining portions of the report. Responsibility: Josh
-
-
-
-
 
 # Constraints
 
