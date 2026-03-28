@@ -27,17 +27,17 @@ The way these two data sets work together is through time. The benefits data tim
 
 # Timeline
 
-- **Data formatting & cleaning:**: Loading the data from each spreadsheet into Python and turning it into a well formatted, usable form like DataFrames. Responsibilities: Fraud Data: Josh, Labor Data: Michael
+- **Data formatting & cleaning:**: Loading the data from each spreadsheet into Python and turning it into a well formatted, usable form like DataFrames. Responsibilities: Fraud Data: Josh, Labor Data: Michael. Finish by: March 29
 
-- **Data integration:** Combine data frames from each data set to each other by joining them over the time data column. May also require reformatting the time columns of each data set to be of the same granularity. Responsibility: Josh
+- **Data integration:** Combine data frames from each data set to each other by joining them over the time data column. May also require reformatting the time columns of each data set to be of the same granularity. Responsibility: Josh. Finish by: April 5.
 
-- **Data analysis:** Perform exploratory data analysis to find trends in the fraud and labor data sets. Responsibility: Josh
+- **Data analysis:** Perform exploratory data analysis to find trends in the fraud and labor data sets. Responsibility: Josh. Finish by: April 12.
 
-- **Data visualization:** Create graphs and other visual to present the data nicely. Responsibility: Michael
+- **Data visualization:** Create graphs and other visual to present the data nicely. Responsibility: Michael. Finish by: April 19.
 
-- **Report findings:** Explain conclusions drawn from the data and the potential implications of them. Responsibility: Michael
+- **Report findings:** Explain conclusions drawn from the data and the potential implications of them. Responsibility: Michael. Finish by: April 26.
 
-- **Finish report:** Produce the summary of our findings, describe future research, and other miscellaneous remaining portions of the report. Responsibility: Josh
+- **Finish report:** Produce the summary of our findings, describe future research, and other miscellaneous remaining portions of the report. Responsibility: Josh. Finish by: May 5.
 
 # Constraints
 
