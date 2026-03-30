@@ -1,11 +1,7 @@
 Add version numbers to dependencies
 
 Data formatting & cleaning
-- Import Labor Data
-
-Data integration
-- reformat time data
-- integrate data sets
+- Rename labour data columns
 
 Data analysis
 - perform data analysis
