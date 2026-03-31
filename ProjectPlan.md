@@ -27,7 +27,7 @@ The way these two data sets work together is through time. The benefits data tim
 
 # Timeline
 
-- **Data formatting & cleaning:**: Loading the data from each spreadsheet into Python and turning it into a well formatted, usable form like DataFrames. Responsibilities: Fraud Data: Josh, Labor Data: Michael. Finish by: March 29
+- **Data formatting & cleaning:**: Loading the data from each spreadsheet into Python and turning it into a well formatted, usable form like DataFrames. Missing values should also be handled by imputing or another suitable method. Responsibilities: Fraud Data: Josh, Labor Data: Michael. Finish by: March 29
 
 - **Data integration:** Combine data frames from each data set to each other by joining them over the time data column. May also require reformatting the time columns of each data set to be of the same granularity. Responsibility: Josh. Finish by: April 5.
 
@@ -51,8 +51,4 @@ One constraint in terms of our data for the project is the lack of non-employmen
 
 # Gaps
 
-One knowledge gap we have right now is the best way to make the data usable. Both data sets came in the form of excel spreadsheets, which, while perfectly easy to import into Python, will require a lot of manual work to get the data from, at least based on our current understanding. If there is an easier tool to use to get the data properly extracted and made usable by Python, it would be a massive time-saver for the project. 
-
 Another gap is how to handle the changing in data collection methodologies throughout the data. Due to the nature of the analysis, we want to look at a long range of years, but the methodology changes will make that difficult. Worse, the changes are mostly in more recent years, which are naturally the most informative years to look if we want the data to be useful today. Any help in terms of how to handle these changes would be appreciated. Would it be better to only use years that have the same method, to use all years but qualify our conclusions, or to do separate analyses for each chunk of years that used a given method.
-
-A final gap is that we couldn't find any information on when the interim status report and final project would be due, so we weren't able to assign specific dates to our timeline. 

@@ -1,7 +1,7 @@
 Add version numbers to dependencies
 
 Data formatting & cleaning
-- Rename labour data columns
+- impute for w,x, and z or find another solution
 
 Data analysis
 - perform data analysis

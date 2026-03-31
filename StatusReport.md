@@ -18,11 +18,11 @@ The data quality section of the report was written and can be found in `README.m
 
 # Project Plan Changes
 
-Now that we have the proper due dates, the timeline has dates for each objective to be finished by.
+Now that we have the proper due dates, the timeline has dates for each objective to be finished by. A note on missing values was also added to the formatting and cleaning timeline item. The gaps section had the parts about not know the project due dates and not knowing the best way to import excel data removed, as now we have due dates and the data is fully imported.
 
 # Challenges
 
-[]
+Working around the excel format of the data was a major challenge. Especially for the fraud data, the excel sheets were formatted in a way that was nice for human readability, but which resulted in a lot of headaches and having to repeatedly make minor tweaks when mistakes were found.
 
 # Contributions
 
