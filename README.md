@@ -45,7 +45,7 @@ with benefits fraud trends.
 
 [using mean of rolling labour periods as the yearly values for integrating]
 
-[fraud x,z = 0, w imputed by mean]
+[fraud x,z = 0, w imputed using KNN with k=2]
 
 ## Findings
 
