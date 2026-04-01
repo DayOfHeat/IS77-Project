@@ -2,3 +2,6 @@ pandas
 openpyxl (may no longer be one?)
 python-calamine
 xlrd
+matplotlib
+sklearn
+numpy

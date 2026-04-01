@@ -27,9 +27,9 @@ The way these two data sets work together is through time. The benefits data tim
 
 # Timeline
 
-- **Data formatting & cleaning:**: Loading the data from each spreadsheet into Python and turning it into a well formatted, usable form like DataFrames. Missing values should also be handled by imputing or another suitable method. Responsibilities: Fraud Data: Josh, Labor Data: Michael. Finish by: March 29
+- ~~**Data formatting & cleaning:** Loading the data from each spreadsheet into Python and turning it into a well formatted, usable form like DataFrames. Missing values should also be handled by imputing or another suitable method. Responsibilities: Fraud Data: Josh, Labor Data: Michael. Finish by: March 29~~ Done
 
-- **Data integration:** Combine data frames from each data set to each other by joining them over the time data column. May also require reformatting the time columns of each data set to be of the same granularity. Responsibility: Josh. Finish by: April 5.
+- ~~**Data integration:** Combine data frames from each data set to each other by joining them over the time data column. May also require reformatting the time columns of each data set to be of the same granularity. Responsibility: Josh. Finish by: April 5.~~ Done
 
 - **Data analysis:** Perform exploratory data analysis to find trends in the fraud and labor data sets. Responsibility: Josh. Finish by: April 12.
 

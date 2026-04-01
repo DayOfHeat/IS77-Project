@@ -43,7 +43,9 @@ with benefits fraud trends.
 
 ## Data Cleaning
 
-[using mean of rolling labour periods as the yearly values for integrating, whatever we end up doing with w,x,z in fraud data]
+[using mean of rolling labour periods as the yearly values for integrating]
+
+[fraud x,z = 0, w imputed by mean]
 
 ## Findings
 
