@@ -40,7 +40,7 @@ Another challenge we dealt with was deciding how to deal with the large quantity
 
 ## Joshua Watson
 
-I wrote the code for importing the fraud data from the excel file and prepared it for use. I also wrote the data quality portion of the report. I added due dates to the project plan's timeline now that we have the project due date. I integrated the two data set together.
+I wrote the code for importing the fraud data from the excel file and prepared it for use. I also wrote the data quality portion of the final report. I added due dates to the project plan's timeline now that we have the project due date. I integrated the two data set together and produced some preliminary visualizations. Also worked on this status report.
 
 ## Michael Eannone
 
