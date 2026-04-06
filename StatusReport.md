@@ -36,4 +36,4 @@ I wrote the code for importing the fraud data from the excel file and prepared i
 
 ## Michael Eannone
 
-I wrote the code for importing the labor data from the Excel file and got it ready to use. The labor data was spread across 22 different sheets and each one was formatted a little differently, so I used xlrd and regular expressions to parse them automatically instead of writing separate code for each sheet. I also helped write this status report update.
+I wrote the code for importing the labor data from the Excel file and got it ready to use. The labor data was spread across 22 different sheets and each one was formatted a little differently, so I used xlrd and regular expressions to parse them automatically instead of writing separate code for each sheet. I also helped to write this status report update.
