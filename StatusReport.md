@@ -2,7 +2,7 @@
 
 ## Data formatting & cleaning
 
-Both the fraud data and the labour data are completely import and ready for use. Fraud data had missing values handled, which the labor data didn't need. They can be found in `project.ipynb`.
+Both the fraud data and the labour data are completely imported and ready for use. Fraud data had missing values handled, which the labor data didn't need, however, the sheets each had inconsistent formatting and time periods which had to be standardized before the data could be used.. They can be found in `project.ipynb`.
 
 ## Data integration
 
