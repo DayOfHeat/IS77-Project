@@ -51,7 +51,7 @@ with benefits fraud trends.
 
 ## Findings
 
-[]
+[Unemployment negatively correlated with fraud, so the opposite of hypothesis is true. Results were statistically significant]
 
 ## Future Work
 

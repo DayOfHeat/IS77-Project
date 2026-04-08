@@ -5,3 +5,6 @@ xlrd
 matplotlib
 sklearn
 numpy
+statsmodels
+re
+datetime

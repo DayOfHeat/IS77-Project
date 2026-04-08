@@ -1,13 +1,7 @@
-Add version numbers to dependencies
-
-Data formatting & cleaning
-- impute for w,x, and z or find another solution
-
-Data analysis
-- perform data analysis
+Add version numbers to dependencies (pip freeze)
 
 Data visualization
-- make graphs
+- made any additional additions to graphs
 
 Report findings
 - write about conclusions

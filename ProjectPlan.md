@@ -31,7 +31,7 @@ The way these two data sets work together is through time. The benefits data tim
 
 - ~~**Data integration:** Combine data frames from each data set to each other by joining them over the time data column. May also require reformatting the time columns of each data set to be of the same granularity. Responsibility: Josh. Finish by: April 5.~~ Done
 
-- **Data analysis:** Perform exploratory data analysis to find trends in the fraud and labor data sets. Responsibility: Josh. Finish by: April 12.
+- ~~**Data analysis:** Perform exploratory data analysis to find trends in the fraud and labor data sets. Responsibility: Josh. Finish by: April 12.~~ Done
 
 - **Data visualization:** Create graphs and other visual to present the data nicely. Responsibility: Michael. Finish by: April 19.
 
