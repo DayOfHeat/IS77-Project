@@ -45,9 +45,9 @@ with benefits fraud trends.
 
 ## Data Cleaning
 
-[using mean of rolling labour periods as the yearly values for integrating]
+To address the completeness issues in the fraud data set, we decided to treat the 'x' and 'z' missing entries as 0 and to impute data for 'w'. We chose to do this for 'z' because it represents "not applicable", most often because a program stop existing, and if a program doesn't exists it makes sense to consider it to no longer have any fraud. We also chose to do this for 'x' because it represented "not available", which most often meant that a program either hadn't started yet or had started but hadn't started reporting fraud data yet due to having recently started. In the first case, treating it as having no fraud makes sense since the program doesn't exist yet and in the second case we can't possible guess what the fraud level would have been, so we assume it is negligible for the first few years. For 'w', we chose to impute values because 'w' represented "no data found in the sample" and most often occurred in the middle of the life of a program when data was missing for given year. We decided to use K-Nearest-Neighbors with K=2 because this will impute the average of the two surrounding years, which seems like a reasonable estimate of the missing year.
 
-[fraud x,z = 0, w imputed using KNN with k=2]
+In order to combine the fraud and labor data sets, we decided to convert the labor data from three-month rolling averages to year averages. Before, data was broken into January-March, February-April, and so on in overlapping periods, so we took the periods starting January through December each year and averaged them. The data set only had periods through October-December 2025, so the periods starting November and December 2025 were not able to be included in the 2025 average.
 
 ## Findings
 
