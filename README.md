@@ -59,7 +59,7 @@ with benefits fraud trends.
 
 ## Reproducing
 
-[]
+[`snakemake --cores 1 --delete-all-output`, `snakemake --cores 1` in shell]
 
 ## References
 
