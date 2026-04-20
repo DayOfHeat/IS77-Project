@@ -51,15 +51,37 @@ In order to combine the fraud and labor data sets, we decided to convert the lab
 
 ## Findings
 
-[Unemployment negatively correlated with fraud, so the opposite of hypothesis is true. Results were statistically significant]
+[(Unemployment negatively correlated with fraud, so the opposite of hypothesis is true. Results were statistically significant)]
+
+[Summary of analysis procedures]
+
+![A graph of fraud by program over time](reportImages/programs.png)
+
+[Discuss graph, statistically significant]
+
+![A graph of total fraud dollars vs unemployment and total fraud percentage vs employment](reportImages/totalfraud.png)
+
+[Discuss graphs, statistically significant]
+
+![A graph of total fraud percentage without universal credit vs unemployment](reportImages/no_uc.png)
+
+[Discuss graph, NOT statistically significant, 1/8 coefficient as with UC]
+
+[Draw conclusions]
 
 ## Future Work
+
+[]
+
+## Challenges
 
 []
 
 ## Reproducing
 
 [`snakemake --cores 1 --delete-all-output`, `snakemake --cores 1` in shell]
+
+[dependencies]
 
 ## References
 

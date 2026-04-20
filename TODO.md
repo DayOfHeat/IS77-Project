@@ -1,11 +1,6 @@
 Add version numbers to dependencies (pip freeze) and install guide
 - test with clean venv to get definite list
 
-Data visualization
-- made any additional additions to graphs
-
-Find way to incorporate statsmodel output into project
-
 Report findings
 - write about conclusions
 
@@ -17,3 +12,6 @@ Clean excess artifacts
 - Links.md
 - fraud.xls
 - labor.xls
+
+Analysis without universal credit?
+- Would probably show neutral correlation

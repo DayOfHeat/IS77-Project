@@ -105,3 +105,7 @@ for row in df_raw_fraud_percent.itertuples():
     df_fraud_percent.loc[int(yearName)] = validColumns
     previousRow = row
 df_fraud_percent.to_csv("data/fraud_percent_parsed.csv")
+
+df_fraud_percent_no_uc = pd.DataFrame()
+df_fraud_percent_no_uc["Benefits Fraud"] = 100*(df_fraud_dollars["All Benefits Fraud"] - df_fraud_dollars["Universal Credit Fraud"])/(df_fraud_dollars["All Benefits Expenditure"] - df_fraud_dollars["Universal Credit Expenditure"])
+df_fraud_percent_no_uc.to_csv("data/fraud_percent_no_uc_parsed.csv")

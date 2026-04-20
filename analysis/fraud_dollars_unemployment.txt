@@ -1,0 +1,25 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:     All Benefits Fraud   R-squared:                       0.246
+Model:                            OLS   Adj. R-squared:                  0.204
+Method:                 Least Squares   F-statistic:                     5.880
+Date:                Mon, 20 Apr 2026   Prob (F-statistic):             0.0261
+Time:                        17:34:08   Log-Likelihood:                -456.60
+No. Observations:                  20   AIC:                             917.2
+Df Residuals:                      18   BIC:                             919.2
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+=========================================================================================
+                            coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+const                 -1.585e+09   1.83e+09     -0.866      0.398   -5.43e+09    2.26e+09
+16+ Unemployment Rate  7.771e+08    3.2e+08      2.425      0.026    1.04e+08    1.45e+09
+==============================================================================
+Omnibus:                        5.691   Durbin-Watson:                   0.268
+Prob(Omnibus):                  0.058   Jarque-Bera (JB):                4.163
+Skew:                           1.116   Prob(JB):                        0.125
+Kurtosis:                       3.112   Cond. No.                         22.9
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
