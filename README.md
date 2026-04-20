@@ -51,23 +51,21 @@ In order to combine the fraud and labor data sets, we decided to convert the lab
 
 ## Findings
 
-[(Unemployment negatively correlated with fraud, so the opposite of hypothesis is true. Results were statistically significant)]
-
-[Summary of analysis procedures]
+[Summary of analysis procedures, graphs, linear models]
 
 ![A graph of fraud by program over time](reportImages/programs.png)
 
-[Discuss graph, statistically significant]
+In the above graph we see benefits fraud broken down by program as a percent of expenditures. In this graph, most programs saw a roughly stable level of fraud over the 19 year period with most rising a bit over time, however Universal Credit quickly spiked up after its inception especially in 2020-2023 during the COVID-19 pandemic. Universal Credit is also one of the biggest contributors to fraud in the dataset (80% of 2025's fraud), so we will analyze the data both including and excluding Universal Credit.
 
 ![A graph of total fraud dollars vs unemployment and total fraud percentage vs employment](reportImages/totalfraud.png)
 
-[Discuss graphs, statistically significant]
+The above graph of total benefits fraud against unemployment shows that on both a dollar and percentage basis there is a clear positive relationship between unemployment and benefits fraud. For fraud dollars, using linear regression yielded a coefficient of 7.771*10<sup>8</sup> and a p-value of 0.026, which is statistically significant as an alpha level of 0.05. For fraud percentage, the coefficient was 0.3293 with a p-value of 0.007, which is also statistically significant. This causes us to conclude that there is a positive correlation between benefits fraud and unemployment.
 
 ![A graph of total fraud percentage without universal credit vs unemployment](reportImages/no_uc.png)
 
-[Discuss graph, NOT statistically significant, 1/8 coefficient as with UC]
+Excluding Universal Credit from the data tells a different story. As shown in the above graph, the benefits fraud of all other programs combined is pretty stagnant over the entire 19 year period. A linear model fit to the data (`analysis/fraud_dollar_no_uc_unemployment.txt`) had a coefficient of 0.0417 and a p-value of 0.113, which is not statistically significant. This means that we cannot conclude based on our data that the fraud of programs other than Universal Credit correlates with unemployment at all at an alpha level of 0.05.
 
-[Draw conclusions]
+[Draw conclusions; discuss surprise about positive correlation but how Universal Credit is an exception to the rule, so apply lessons based on data excluding it (it suggests fraud likely isn't due to financial hardship, but rather willful theft)]
 
 ## Future Work
 

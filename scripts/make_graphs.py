@@ -65,7 +65,7 @@ ax.plot(years,df_fraud_percent_no_uc_unemployment["Benefits Fraud"][years], labe
 ax.plot(years,df_fraud_dollars_unemployment["16+ Unemployment Rate"][years], label="16+ Unemployment Rate (%)",color="indigo")
 ax.axvline(2019, linestyle="dashed", color="darkred", label="Methodology Change")
 ax.legend(loc='upper left')
-ax.set_title("Benefits Fraud by Program Over Time Excluding Universal Credit (% of Expenditure)")
+ax.set_title("Benefits Fraud Over Time Excluding Universal Credit (% of Expenditure)")
 ax.set_xlabel("Year")
 ax.set_xticks(range(2006,2026,2))
 ax.set_ybound(0,14)
