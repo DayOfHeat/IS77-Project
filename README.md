@@ -73,7 +73,11 @@ In summary, we found that there was a positive correlation between unemployment 
 
 ## Challenges
 
-[]
+[working with excel files]
+
+[having annoying change in methodology]
+
+[Snakemake rewrite]
 
 ## Reproducing
 
