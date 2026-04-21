@@ -61,7 +61,7 @@ The above graph of total benefits fraud against unemployment shows that on both 
 
 ![A graph of total fraud percentage without universal credit vs unemployment](reportImages/no_uc.png)
 
-Excluding Universal Credit from the data tells a different story. As shown in the above graph, the benefits fraud of all other programs combined is pretty stagnant over the entire 19 year period. A linear model fit to the data (`analysis/fraud_dollar_no_uc_unemployment.txt`) had a coefficient of 0.0417 and a p-value of 0.113, which is not statistically significant. This means that we cannot conclude based on our data that the fraud of programs other than Universal Credit correlates with unemployment at all at an alpha level of 0.05.
+Excluding Universal Credit from the data tells a different story. As shown in the above graph, the benefits fraud of all other programs combined is pretty stagnant over the entire 19 year period. A linear model fit to the data had a coefficient of 0.0417 and a p-value of 0.113, which is not statistically significant. This means that we cannot conclude based on our data that the fraud of programs other than Universal Credit correlates with unemployment at all at an alpha level of 0.05.
 
 In summary, we found that there was a positive correlation between unemployment rate and benefits fraud, but the relationship was only statistically significant if Universal Credit was included in the data. We believe that this suggests that most benefits fraud may be due to willful theft rather than legitimate need on the part of the recipient, as most programs don't see a rise in fraud when economic conditions are worse, but Universal Credit in particular is at greater risk of fraud during worse labour markets. Though further testing would be needed to prove causality, this suggests that the DWP should reallocate its anti-fraud resources more towards Universal Credit during times of high unemployment. We also believe that this could be an indicator that Universal Credit provides insufficient aid such that fraud may be required for certain families to survive economic hard times, but this also requires further research. 
 
@@ -91,4 +91,8 @@ All source code is under [BSD 2-clause license](LICENSE).
 
 ## References
 
-Department for Work & Pensions. (8 May 2015). *2010 to 2015 government policy: welfare reform*. GOV.UK. https://www.gov.uk/government/publications/2010-to-2015-government-policy-welfare-reform/2010-to-2015-government-policy-welfare-reform#appendix-1-government-policy-on-universal-credit-an-introduction
+Department for Work and Pensions. (8 May 2015). *2010 to 2015 government policy: welfare reform*. GOV.UK. https://www.gov.uk/government/publications/2010-to-2015-government-policy-welfare-reform/2010-to-2015-government-policy-welfare-reform#appendix-1-government-policy-on-universal-credit-an-introduction
+
+Department for Work and Pensions. (12 June 2025). *Fraud and error in the benefit system: Financial year 2024-2025 estimates* [Data set]. GOV.UK. https://www.gov.uk/government/statistics/fraud-and-error-in-the-benefit-system-financial-year-2024-to-2025-estimates
+
+Office for National Statistics. (19 March 2026). *A01: Summary of labour market statistics* [Data set]. GOV.UK https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics/current/a01mar2026.xls

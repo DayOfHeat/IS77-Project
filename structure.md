@@ -18,9 +18,9 @@ Contains raw and processed data used in the project. Contents are produced by ru
 
 ### Raw Data
 
-`fraud_raw.xlsx` - Excel sheet of fraud data fetched from [UK.gov](https://www.gov.uk/government/statistics/fraud-and-error-in-the-benefit-system-financial-year-2024-to-2025-estimates).
+`fraud_raw.xlsx` - Excel sheet of fraud data fetched from [gov.uk](https://www.gov.uk/government/statistics/fraud-and-error-in-the-benefit-system-financial-year-2024-to-2025-estimates).
 
-`labor_raw.xls` - Excel sheet of labor data fetched from [UK.gov](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics).
+`labor_raw.xls` - Excel sheet of labor data fetched from [gov.uk](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics).
 
 ### Parsed Data
 
