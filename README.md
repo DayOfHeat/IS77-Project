@@ -1,4 +1,4 @@
-# Analysis of UK Benefits Fraud Against Labor Data
+# Analysis of UK Benefits Fraud Against Unemployment
 
 ## Contributors
 
@@ -77,9 +77,13 @@ In summary, we found that there was a positive correlation between unemployment 
 
 ## Reproducing
 
-[`snakemake --cores 1 --delete-all-output`, `snakemake --cores 1` in shell]
+The dependencies for this project are the python packages found in `dependencies.txt`. They can be installed with `pip install -r dependencies.txt`.
 
-[dependencies]
+To reproduce the results of this project from scratch, run `snakemake -c 1 --delete-all-output` to remove all existing files and then run `snakemake -c 1` to run all scripts in the project.
+
+Contains public sector information licensed under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).
+
+All source code is under [BSD 2-clause license](LICENSE).
 
 ## References
 

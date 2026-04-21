@@ -4,7 +4,7 @@ Dep. Variable:         Benefits Fraud   R-squared:                       0.133
 Model:                            OLS   Adj. R-squared:                  0.085
 Method:                 Least Squares   F-statistic:                     2.772
 Date:                Tue, 21 Apr 2026   Prob (F-statistic):              0.113
-Time:                        12:13:46   Log-Likelihood:                 8.8516
+Time:                        16:07:37   Log-Likelihood:                 8.8516
 No. Observations:                  20   AIC:                            -13.70
 Df Residuals:                      18   BIC:                            -11.71
 Df Model:                           1                                         
