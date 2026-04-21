@@ -51,8 +51,6 @@ In order to combine the fraud and labor data sets, we decided to convert the lab
 
 ## Findings
 
-[Summary of analysis procedures, graphs, linear models]
-
 ![A graph of fraud by program over time](reportImages/programs.png)
 
 In the above graph we see benefits fraud broken down by program as a percent of expenditures. In this graph, most programs saw a roughly stable level of fraud over the 19 year period with most rising a bit over time, however Universal Credit quickly spiked up after its inception especially in 2020-2023 during the COVID-19 pandemic. Universal Credit is also one of the biggest contributors to fraud in the dataset (80% of 2025's fraud), so we will analyze the data both including and excluding Universal Credit.
@@ -65,11 +63,13 @@ The above graph of total benefits fraud against unemployment shows that on both 
 
 Excluding Universal Credit from the data tells a different story. As shown in the above graph, the benefits fraud of all other programs combined is pretty stagnant over the entire 19 year period. A linear model fit to the data (`analysis/fraud_dollar_no_uc_unemployment.txt`) had a coefficient of 0.0417 and a p-value of 0.113, which is not statistically significant. This means that we cannot conclude based on our data that the fraud of programs other than Universal Credit correlates with unemployment at all at an alpha level of 0.05.
 
-[Draw conclusions; discuss surprise about positive correlation but how Universal Credit is an exception to the rule, so apply lessons based on data excluding it (it suggests fraud likely isn't due to financial hardship, but rather willful theft)]
+In summary, we found that there was a positive correlation between unemployment rate and benefits fraud, but the relationship was only statistically significant if Universal Credit was included in the data. We believe that this suggests that most benefits fraud may be due to willful theft rather than legitimate need on the part of the recipient, as most programs don't see a rise in fraud when economic conditions are worse, but Universal Credit in particular is at greater risk of fraud during worse labour markets. Though further testing would be needed to prove causality, this suggests that the DWP should reallocate its anti-fraud resources more towards Universal Credit during times of high unemployment. We also believe that this could be an indicator that Universal Credit provides insufficient aid such that fraud may be required for certain families to survive economic hard times, but this also requires further research. 
 
 ## Future Work
 
-[]
+[potential future research]
+
+[future test to prove causality]
 
 ## Challenges
 
