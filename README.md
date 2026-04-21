@@ -8,13 +8,13 @@
 
 ## Summary
 
-[]
+[mention [structure.md](structure.md)]
 
 ## Data Profile
 
-The first data set used in this project is the Department for Work and Pensions (DWP)'s [Fraud and Error in the Benefit System](https://www.gov.uk/government/statistics/fraud-and-error-in-the-benefit-system-financial-year-2024-to-2025-estimates) benefits fraud data. This is the official government data on benefits fraud and is available under the [Open Government Licence](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). The data was collected by taking a random sample of benefit claims to audit and determining the cause of any discrepancies as fraud, claimant error, or official error. The sample is then used to estimate total over/under payments and their causes in the form on a 95% confidence interval. The data can be found at `fraud.xlsx`. The portion of data used in this report is the first two tables, which cover over/under payments broken down by program from 2006 to 2025. This will be the fraud data for our analysis in this report.
+The first data set used in this project is the Department for Work and Pensions (DWP)'s [Fraud and Error in the Benefit System](https://www.gov.uk/government/statistics/fraud-and-error-in-the-benefit-system-financial-year-2024-to-2025-estimates) benefits fraud data. This is the official government data on benefits fraud and is available under the [Open Government Licence](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). The data was collected by taking a random sample of benefit claims to audit and determining the cause of any discrepancies as fraud, claimant error, or official error. The sample is then used to estimate total over/under payments and their causes in the form on a 95% confidence interval. The data can be found at `data/fraud_raw.xlsx`. The portion of data used in this report is the first two tables, which cover over/under payments broken down by program from 2006 to 2025. This will be the fraud data for our analysis in this report.
 
-The second data set we will be using is UK Office of National Statistics (ONS)'s [Summary of Labour Market Statistics](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics). This is the official government data on the UK labor market and is also available under the [Open Government Licence](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). The data is from the ONS's Labour Force Survey, taken monthly since 1998. It contains data on unemployment rates, economic inactivity rates, and average pay rates broken down by sector and age groups. It can be found at `labour.xls`. This report uses the unemployment data found on table one as the main economic indicator to compare benefits fraud against.
+The second data set we will be using is UK Office of National Statistics (ONS)'s [Summary of Labour Market Statistics](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics). This is the official government data on the UK labor market and is also available under the [Open Government Licence](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). The data is from the ONS's Labour Force Survey, taken monthly since 1998. It contains data on unemployment rates, economic inactivity rates, and average pay rates broken down by sector and age groups. It can be found at `data/labour_raw.xls`. This report uses the unemployment data found on table one as the main economic indicator to compare benefits fraud against.
 
 ## Data Quality
 
@@ -51,11 +51,11 @@ In order to combine the fraud and labor data sets, we decided to convert the lab
 
 ## Findings
 
-![A graph of fraud by program over time](reportImages/programs.png)
+![A graph of fraud by program over time](reportImages/all_programs.png)
 
 In the above graph we see benefits fraud broken down by program as a percent of expenditures. In this graph, most programs saw a roughly stable level of fraud over the 19 year period with most rising a bit over time, however Universal Credit quickly spiked up after its inception especially in 2020-2023 during the COVID-19 pandemic. Universal Credit is also one of the biggest contributors to fraud in the dataset (80% of 2025's fraud), so we will analyze the data both including and excluding Universal Credit.
 
-![A graph of total fraud dollars vs unemployment and total fraud percentage vs employment](reportImages/totalfraud.png)
+![A graph of total fraud dollars vs unemployment and total fraud percentage vs employment](reportImages/total_fraud.png)
 
 The above graph of total benefits fraud against unemployment shows that on both a dollar and percentage basis there is a clear positive relationship between unemployment and benefits fraud. For fraud dollars, using linear regression yielded a coefficient of 7.771*10<sup>8</sup> and a p-value of 0.026, which is statistically significant as an alpha level of 0.05. For fraud percentage, the coefficient was 0.3293 with a p-value of 0.007, which is also statistically significant. This causes us to conclude that there is a positive correlation between benefits fraud and unemployment.
 

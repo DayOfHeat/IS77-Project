@@ -3,17 +3,12 @@ Add version numbers to dependencies (pip freeze) and install guide
 
 Add linear analysis lines to graphs
 
-Report findings
-- write about conclusions
-
 Finish report
 - check work against rubric
 
 Clean excess artifacts
 - old.project.ipynb
-- Links.md
-- fraud.xls
-- labor.xls
-
-Analysis without universal credit?
-- Would probably show neutral correlation
+- old.Links.md
+- old.fraud.xls
+- old.labor.xls
+- Todo.md

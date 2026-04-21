@@ -35,7 +35,7 @@ The way these two data sets work together is through time. The benefits data tim
 
 - ~~**Data visualization:** Create graphs and other visual to present the data nicely. Responsibility: Michael. Finish by: April 19.~~ Done
 
-- **Report findings:** Explain conclusions drawn from the data and the potential implications of them. Responsibility: Michael. Finish by: April 26.
+- ~~**Report findings:** Explain conclusions drawn from the data and the potential implications of them. Responsibility: Michael. Finish by: April 26.~~ Done
 
 - **Finish report:** Produce the summary of our findings, describe future research, and other miscellaneous remaining portions of the report. Responsibility: Josh. Finish by: May 5.
 

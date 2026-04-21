@@ -21,4 +21,4 @@ df_fraud_percent_no_uc_unemployment = pd.read_csv("data/clean_fraud_percent_no_u
 df_fraud_percent_no_uc_unemployment.set_index("Year",inplace=True)
 
 percent_no_uc_model = sm.OLS(exog=sm.add_constant(df_fraud_percent_no_uc_unemployment["16+ Unemployment Rate"]),endog=df_fraud_percent_no_uc_unemployment["Benefits Fraud"]).fit()
-open("analysis/fraud_dollars_no_uc_unemployment.txt","w").write(str(percent_no_uc_model.summary()))
+open("analysis/fraud_percent_no_uc_unemployment.txt","w").write(str(percent_no_uc_model.summary()))

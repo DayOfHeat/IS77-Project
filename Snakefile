@@ -2,8 +2,10 @@ rule run_all:
     input:
         "graphs/all_programs.png",
         "graphs/total_fraud.png",
+        "graphs/no_uc.png",
         "analysis/fraud_dollars_unemployment.txt",
-        "analysis/fraud_percent_unemployment.txt"
+        "analysis/fraud_percent_unemployment.txt",
+        "analysis/fraud_percent_no_uc_unemployment.txt"
 
 rule make_graphs:
     input:
@@ -12,7 +14,8 @@ rule make_graphs:
         "data/clean_fraud_percent_no_uc_unemployment.csv"
     output:
         "graphs/all_programs.png",
-        "graphs/total_fraud.png"
+        "graphs/total_fraud.png",
+        "graphs/no_uc.png"
     shell:
         "python scripts/make_graphs.py"
 
@@ -23,7 +26,8 @@ rule analysis:
         "data/clean_fraud_percent_no_uc_unemployment.csv"
     output:
         "analysis/fraud_dollars_unemployment.txt",
-        "analysis/fraud_percent_unemployment.txt"
+        "analysis/fraud_percent_unemployment.txt",
+        "analysis/fraud_percent_no_uc_unemployment.txt"
     shell:
         "python scripts/analysis.py"
 
