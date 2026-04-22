@@ -73,11 +73,15 @@ In summary, we found that there was a positive correlation between unemployment 
 
 ## Challenges
 
-[working with excel files]
+Working around the excel format of the data was a major challenge. Especially for the fraud data, the excel sheets were formatted in a way that was nice for human readability, but which resulted in a lot of headaches and having to repeatedly make minor tweaks when mistakes were found. We used a different method for each dataset that matched its structure. For the fraud data we used pandas `read_excel` function and wrote code that was manually adapted to the structure due to various one-off visual markers in the data which were nice for human readability but annoying for machine readability. 
 
-[having annoying change in methodology]
+Because the labor data was already formatted in uninterrupted tables, we used xlrd and regular expressions to parse the data automatically from each sheet. The challenge with the labor data was that it was spread across 28 sheets and each one was formatted differently. Some of the sheets had multiple header rows stacked on top of each other, some stored dates as numbers instead of readable text, and others had footnote text mixed in with the actual data rows. In order to handle all of this without writing completely separate code for every sheet, a parser that could be adjusted depending on the sheet was built. 5 sheets ended up being left out entirely, with 3 only having metadata text and the other 2 had their data removed by ONS and moved to a different dataset.
 
-[Snakemake rewrite]
+Another challenge we dealt with was deciding how to deal with the large quantity of missing values in the fraud data. The details of this are discussed in the Data Cleaning section of this report, but we ultimately decided to impute the truly missing data and treat the intentionally missing data as 0.
+
+Another challenge in this project was that we initially wrote the project in a jupyter notebook for easy debugging. Once we got late in the project, we had to convert the jupyter notebook to multiple Python scripts and a Snakefile. This required some minor retooling, as the code had to account for having to load and save the data before each step, but ended up being a good opportunity to winnow some unnecessary code.
+
+Another challenge in this project was figuring out how to best display the data. For graphs, this was pretty simple, but we wanted to have linear regression output. When we initially wrote the project in a jupyter notebook, the statsmodel output could simply be printed, but we had to be more creative in the Snakemake version. We ultimately opted for simply writing the output to a text file. We would like it to have been some kind of image instead, but we considered the text file a sufficient solution.
 
 ## Reproducing
 
