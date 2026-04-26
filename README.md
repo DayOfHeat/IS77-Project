@@ -76,9 +76,16 @@ In summary, we found that there was a positive correlation between unemployment 
 
 ## Future Work
 
-[potential future research]
+The biggest gap in this project is that we are only able to show correlation not causation. The simple fact that unemployment and Universal Credit fraud move together does not mean that one is causing the other. They could both be responding to some third factor like a broader recession, a policy change, or a shift in overall enforcement intensity, and not necessarily having causation with the other. One potentially useful next step would be to conduct a Granger causality test as it would check whether past values of unemployment are actually predictive of future fraud as opposed to just being correlated with it. This will probably be most useful to run on Universal Credit specifically given what we found, and it would allow us to start to build a stronger case for a causal link.
 
-[future test to prove causality]
+Something else to look out for is that there were definitely some confounding variables that we didn't account for which future work could try to control for. For example, some potential confounders might be the size of the claimant pool changing over time, benefit payment amounts changing, and DWP enforcement levels not being consistent. Any of these could have a real effect on fraud rates independently of unemployment. For example, the government could decide to ramp up audits during a recession and should they choose to do that, detected fraud might go up even if the actual fraud doesn't change. A multivariate regression that controls these factors would be able to give a cleaner estimate of unemployment's independent effect.
+
+Another path that might be worth exploring is to break down the fraud by type. The DWP data is able to distinguish between fraud, claimant error, and official error, but we primarily focused on fraud. It'd be interesting to see whether claimant error also rises with unemployment, due to the fact that it might suggest people are genuinely confused about what they're entitled to rather than actively trying to rig the system. If claimant error stays flat while fraud rises that would point to more deliberate behavior, and if both rise together, then that would suggest that the system may be harder to navigate correctly during stressful economic times, which would be a different kind of problem to solve.
+
+It might also be worth looking into some regional analysis. As it stands the DWP only publishes fraud estimates at the national level, but unemployment varies quite a bit across different parts of the UK. If regional fraud data is examined or ever made available, it may be worth comparing high unemployment areas against low unemployment areas in the same year, as it would let you control for national level time trends and allow you to get a much more convincing estimate of the relationship.
+
+Finally it would also be worth comparing the UK's experience to other countries with similar programs. If the same pattern of one large program driving a disproportionate amount of fraud during recessions shows up in other countries too, that would suggest something about this type of program in general as opposed to something specific in how the UK implemented Universal Credit. A comparison like this would also help to separate out whether the issue is with the program design itself or in the economic and political context surrounding its implementation in the UK.
+
 
 ## Challenges
 
