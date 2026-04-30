@@ -9,6 +9,8 @@ df_fraud_percent_unemployment = pd.read_csv("data/clean_fraud_percent_unemployme
 df_fraud_percent_unemployment.set_index("Year",inplace=True)
 
 years = range(2006,2026)
+
+# Graph of all programs
 fig, ax = plt.subplots(figsize=(10, 6))
 ax.plot(years,df_fraud_percent_unemployment["All Benefits Fraud"][years], label="Total Benefits Fraud (%)",color="black", linewidth=2)
 ax.plot(years,df_fraud_percent_unemployment["Universal Credit Fraud"][years], label="Universal Credit Fraud (%)",color="red")
@@ -36,6 +38,7 @@ plt.savefig('graphs/all_programs.png')
 df_fraud_dollars_unemployment = pd.read_csv("data/clean_fraud_dollars_unemployment.csv")
 df_fraud_dollars_unemployment.set_index("Year",inplace=True)
 
+# Double graph of total fraud
 fig, ax = plt.subplots(figsize=(10, 10),nrows=2)
 ax[0].plot(years,df_fraud_dollars_unemployment["All Benefits Fraud"][years]/1e9, label="Total Benefits Fraud ($Billions)",color="royalblue")
 ax[0].plot(years,df_fraud_dollars_unemployment["16+ Unemployment Rate"][years], label="16+ Unemployment Rate (%)",color="indigo")
@@ -60,6 +63,7 @@ plt.savefig('graphs/total_fraud.png')
 df_fraud_percent_no_uc_unemployment = pd.read_csv("data/clean_fraud_percent_no_uc_unemployment.csv")
 df_fraud_percent_no_uc_unemployment.set_index("Year",inplace=True)
 
+# Graph without Universal Credit
 fig, ax = plt.subplots(figsize=(10, 6))
 ax.plot(years,df_fraud_percent_no_uc_unemployment["Benefits Fraud"][years], label="Benefits Fraud Excluding Universal Credit (%)",color="royalblue", linewidth=2)
 ax.plot(years,df_fraud_dollars_unemployment["16+ Unemployment Rate"][years], label="16+ Unemployment Rate (%)",color="indigo")

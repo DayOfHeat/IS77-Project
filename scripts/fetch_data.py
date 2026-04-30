@@ -1,10 +1,11 @@
 import os
 import requests
 
+# Fixed link for 2025 publication
 fraud_url = "https://assets.publishing.service.gov.uk/media/684a84bc38cd4b88e2c7db57/fraud-and-error-statistics-release-2024-2025-estimates-data-tables.xlsx"
 
+# Fixed link for March publication
 labor_url = "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics/current/a01mar2026.xls"
-
 
 if not os.path.exists("data"):
     os.makedirs("data", exist_ok=True)

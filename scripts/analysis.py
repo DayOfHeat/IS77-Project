@@ -8,17 +8,20 @@ if not os.path.exists("analysis"):
 df_fraud_percent_unemployment = pd.read_csv("data/clean_fraud_percent_unemployment.csv")
 df_fraud_percent_unemployment.set_index("Year",inplace=True)
 
+# Fraud percent vs unemployment percent
 percent_model = sm.OLS(exog=sm.add_constant(df_fraud_percent_unemployment["16+ Unemployment Rate"]),endog=df_fraud_percent_unemployment["All Benefits Fraud"]).fit()
 open("analysis/fraud_percent_unemployment.txt","w").write(str(percent_model.summary()))
 
 df_fraud_dollars_unemployment = pd.read_csv("data/clean_fraud_dollars_unemployment.csv")
 df_fraud_dollars_unemployment.set_index("Year",inplace=True)
 
+# Fraud dollars vs unemployment percent
 dollars_model = sm.OLS(exog=sm.add_constant(df_fraud_dollars_unemployment["16+ Unemployment Rate"]),endog=df_fraud_dollars_unemployment["All Benefits Fraud"]).fit()
 open("analysis/fraud_dollars_unemployment.txt","w").write(str(dollars_model.summary()))
 
 df_fraud_percent_no_uc_unemployment = pd.read_csv("data/clean_fraud_percent_no_uc_unemployment.csv")
 df_fraud_percent_no_uc_unemployment.set_index("Year",inplace=True)
 
+# Fraud percent without Universal Credit vs unemployment percent
 percent_no_uc_model = sm.OLS(exog=sm.add_constant(df_fraud_percent_no_uc_unemployment["16+ Unemployment Rate"]),endog=df_fraud_percent_no_uc_unemployment["Benefits Fraud"]).fit()
 open("analysis/fraud_percent_no_uc_unemployment.txt","w").write(str(percent_no_uc_model.summary()))

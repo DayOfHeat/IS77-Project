@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 
+# Fraud dollars parsing
 df_raw_fraud_dollars = pd.read_excel(io="data/fraud_raw.xlsx",sheet_name="Table_1",engine="calamine",skiprows=[0,1,2,4,5,11,12,13],nrows=145)
 df_raw_fraud_dollars.drop(columns=["Unnamed: 0"], inplace=True)
 df_raw_fraud_dollars = df_raw_fraud_dollars.T
@@ -48,6 +49,7 @@ for row in df_raw_fraud_dollars.itertuples():
     previousRow = row
 df_fraud_dollars.to_csv("data/fraud_dollars_parsed.csv")
 
+# Fraud percent parsing
 df_raw_fraud_percent = pd.read_excel(io="data/fraud_raw.xlsx",sheet_name="Table_2",engine="calamine",skiprows=[0,1,2,4,5,11,12,13],nrows=145)
 df_raw_fraud_percent.drop(columns=["Unnamed: 0"], inplace=True)
 df_raw_fraud_percent = df_raw_fraud_percent.T
@@ -106,6 +108,7 @@ for row in df_raw_fraud_percent.itertuples():
     previousRow = row
 df_fraud_percent.to_csv("data/fraud_percent_parsed.csv")
 
+# Calculating fraud without Universal Credit as a percent
 df_fraud_percent_no_uc = pd.DataFrame()
 df_fraud_percent_no_uc["Benefits Fraud"] = 100*(df_fraud_dollars["All Benefits Fraud"] - df_fraud_dollars["Universal Credit Fraud"])/(df_fraud_dollars["All Benefits Expenditure"] - df_fraud_dollars["Universal Credit Expenditure"])
 df_fraud_percent_no_uc.to_csv("data/fraud_percent_no_uc_parsed.csv")
