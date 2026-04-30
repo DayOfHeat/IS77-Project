@@ -2,6 +2,7 @@ Add linear analysis lines to graphs
 
 Finish report
 - check work against rubric
+- DataDictionary.md
 
 Clean excess artifacts
 - old.project.ipynb

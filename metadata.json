@@ -1,0 +1,17 @@
+{
+    "Title":"Analysis of UK Benefits Fraud Against Unemployment",
+    "Description":"Explores the trend in UK benefits fraud against UK unemployment to draw potential regulatory insight",
+    "Date":"2026-5-5",
+    "Language":"en",
+    "Rights":"BSD 2-Clause",
+    "Creator":"Joshua Watson",
+    "Contributor": "Michael Eannone",
+    "Formats":["Markdown","Python"],
+    "Coverage":"2006-2025",
+    "Identifier":"https://github.com/DayOfHeat/IS77-Project",
+    "Publisher":"Github",
+    "Sources":["Department for Work and Pensions","Office of National Statistics"],
+    "Type":"Text",
+    "Subject":"Benefits fraud and unemployment",
+    "Relation":"N/A"
+}
